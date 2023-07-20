@@ -35,7 +35,7 @@
   }
 
   .toolbar {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -73,6 +73,7 @@
     max-width: 960px;
     flex-direction: column;
     align-items: center;
+    display: none;
   }
 
   svg.material-icons {
@@ -481,4 +482,11 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<router-outlet></router-outlet>
+
+<router-outlet>
+  <a routerLink="/lazy-user/user">Go to Lazy Module</a>
+  <a routerLink="/dashboard">dashboard</a>
+</router-outlet>
+
+
+

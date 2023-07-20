@@ -1,0 +1,14 @@
+<p>dashboard works!</p>
+<ul>
+    <li *ngFor="let brand of brands">
+        <p (click)="setBrand(brand)">{{brand}}</p>
+        <ul>
+            <li *ngFor="let c of categories">
+                {{c}}
+            </li>
+        </ul>
+    </li>
+</ul>
+<div>
+    <app-product-details [brand]="brand" (category)="showCategories($event)"></app-product-details>
+</div>
